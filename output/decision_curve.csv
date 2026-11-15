@@ -1,0 +1,295 @@
+"strategy","threshold","net_benefit"
+"Logistic",0.01,0.04169
+"Logistic",0.015,0.03839
+"Logistic",0.02,0.03513
+"Logistic",0.025,0.03287
+"Logistic",0.03,0.03024
+"Logistic",0.035,0.02742
+"Logistic",0.04,0.02525
+"Logistic",0.045,0.02275
+"Logistic",0.05,0.02142
+"Logistic",0.055,0.01936
+"Logistic",0.06,0.0183
+"Logistic",0.065,0.01664
+"Logistic",0.07,0.01524
+"Logistic",0.075,0.01247
+"Logistic",0.08,0.01163
+"Logistic",0.085,0.01139
+"Logistic",0.09,0.00986
+"Logistic",0.095,0.00816
+"Logistic",0.1,0.00547
+"Logistic",0.105,0.00486
+"Logistic",0.11,0.0049
+"Logistic",0.115,0.00406
+"Logistic",0.12,0.00328
+"Logistic",0.125,0.00284
+"Logistic",0.13,0.00289
+"Logistic",0.135,0.00146
+"Logistic",0.14,0.0015
+"Logistic",0.145,0.00145
+"Logistic",0.15,9e-05
+"Logistic",0.155,-0.00033
+"Logistic",0.16,3e-05
+"Logistic",0.165,-0.00019
+"Logistic",0.17,-7e-05
+"Logistic",0.175,-0.00022
+"Logistic",0.18,-5e-04
+"Logistic",0.185,-0.00088
+"Logistic",0.19,-0.00029
+"Logistic",0.195,-0.00089
+"Logistic",0.2,-0.00104
+"Logistic",0.205,-0.00108
+"Logistic",0.21,-0.00139
+"Logistic",0.215,-0.00183
+"Logistic",0.22,-0.00196
+"Logistic",0.225,-0.00225
+"Logistic",0.23,-0.00188
+"Logistic",0.235,-0.00205
+"Logistic",0.24,-0.00289
+"Logistic",0.245,-0.00226
+"Logistic",0.25,-0.00208
+"LASSO",0.01,0.04121
+"LASSO",0.015,0.03851
+"LASSO",0.02,0.03536
+"LASSO",0.025,0.03271
+"LASSO",0.03,0.03029
+"LASSO",0.035,0.02768
+"LASSO",0.04,0.02581
+"LASSO",0.045,0.02343
+"LASSO",0.05,0.0222
+"LASSO",0.055,0.01996
+"LASSO",0.06,0.01753
+"LASSO",0.065,0.01402
+"LASSO",0.07,0.01377
+"LASSO",0.075,0.01316
+"LASSO",0.08,0.01172
+"LASSO",0.085,0.00929
+"LASSO",0.09,0.00859
+"LASSO",0.095,0.00725
+"LASSO",0.1,0.00682
+"LASSO",0.105,0.00593
+"LASSO",0.11,0.00452
+"LASSO",0.115,0.00488
+"LASSO",0.12,0.00355
+"LASSO",0.125,0.00305
+"LASSO",0.13,0.00329
+"LASSO",0.135,0.00169
+"LASSO",0.14,0.00105
+"LASSO",0.145,0.00129
+"LASSO",0.15,0.0011
+"LASSO",0.155,0.00098
+"LASSO",0.16,-6e-05
+"LASSO",0.165,-0.00027
+"LASSO",0.17,-0.00026
+"LASSO",0.175,-0.00028
+"LASSO",0.18,-0.00056
+"LASSO",0.185,-0.00096
+"LASSO",0.19,-0.00152
+"LASSO",0.195,-0.0017
+"LASSO",0.2,-0.00156
+"LASSO",0.205,-0.00139
+"LASSO",0.21,-0.00129
+"LASSO",0.215,-0.00161
+"LASSO",0.22,-0.00186
+"LASSO",0.225,-0.00175
+"LASSO",0.23,-0.00168
+"LASSO",0.235,-0.00189
+"LASSO",0.24,-0.00181
+"LASSO",0.245,-0.00161
+"LASSO",0.25,-0.00168
+"Random forest",0.01,0.04125
+"Random forest",0.015,0.03796
+"Random forest",0.02,0.03546
+"Random forest",0.025,0.03304
+"Random forest",0.03,0.03053
+"Random forest",0.035,0.02764
+"Random forest",0.04,0.02468
+"Random forest",0.045,0.02113
+"Random forest",0.05,0.01828
+"Random forest",0.055,0.01517
+"Random forest",0.06,0.01407
+"Random forest",0.065,0.01114
+"Random forest",0.07,0.00981
+"Random forest",0.075,0.00867
+"Random forest",0.08,0.00811
+"Random forest",0.085,0.00833
+"Random forest",0.09,0.00677
+"Random forest",0.095,0.00604
+"Random forest",0.1,0.0055
+"Random forest",0.105,0.00522
+"Random forest",0.11,0.0046
+"Random forest",0.115,0.00423
+"Random forest",0.12,0.00342
+"Random forest",0.125,0.00297
+"Random forest",0.13,0.00332
+"Random forest",0.135,0.00174
+"Random forest",0.14,0.00131
+"Random forest",0.145,0.00113
+"Random forest",0.15,0.00112
+"Random forest",0.155,0.00071
+"Random forest",0.16,0.00021
+"Random forest",0.165,0.00068
+"Random forest",0.17,0.00145
+"Random forest",0.175,0.00014
+"Random forest",0.18,4e-05
+"Random forest",0.185,0.00049
+"Random forest",0.19,-0.00021
+"Random forest",0.195,-3e-04
+"Random forest",0.2,0
+"Random forest",0.205,-4e-04
+"Random forest",0.21,-0.00094
+"Random forest",0.215,-0.00101
+"Random forest",0.22,-0.00106
+"Random forest",0.225,-0.00178
+"Random forest",0.23,-0.00133
+"Random forest",0.235,-0.00102
+"Random forest",0.24,-0.00089
+"Random forest",0.245,-0.00084
+"Random forest",0.25,-0.00119
+"Boosting",0.01,0.04141
+"Boosting",0.015,0.03795
+"Boosting",0.02,0.03606
+"Boosting",0.025,0.03343
+"Boosting",0.03,0.03002
+"Boosting",0.035,0.02637
+"Boosting",0.04,0.024
+"Boosting",0.045,0.02127
+"Boosting",0.05,0.01888
+"Boosting",0.055,0.01712
+"Boosting",0.06,0.0146
+"Boosting",0.065,0.013
+"Boosting",0.07,0.01104
+"Boosting",0.075,0.01082
+"Boosting",0.08,0.00974
+"Boosting",0.085,0.00783
+"Boosting",0.09,0.00707
+"Boosting",0.095,0.00615
+"Boosting",0.1,0.00593
+"Boosting",0.105,0.0048
+"Boosting",0.11,0.00402
+"Boosting",0.115,0.00383
+"Boosting",0.12,0.00387
+"Boosting",0.125,0.0039
+"Boosting",0.13,0.00307
+"Boosting",0.135,0.00163
+"Boosting",0.14,0.00157
+"Boosting",0.145,0.00107
+"Boosting",0.15,0.00136
+"Boosting",0.155,0.00159
+"Boosting",0.16,0.00144
+"Boosting",0.165,0.00129
+"Boosting",0.17,0.00105
+"Boosting",0.175,0.00084
+"Boosting",0.18,-0.00017
+"Boosting",0.185,-6e-05
+"Boosting",0.19,-0.00012
+"Boosting",0.195,-0.00053
+"Boosting",0.2,-0.00082
+"Boosting",0.205,-0.00056
+"Boosting",0.21,-2e-04
+"Boosting",0.215,-0.00027
+"Boosting",0.22,-0.00048
+"Boosting",0.225,-0.00085
+"Boosting",0.23,-0.00084
+"Boosting",0.235,-0.00072
+"Boosting",0.24,-8e-04
+"Boosting",0.245,-0.00075
+"Boosting",0.25,-0.00129
+"Test everyone",0.01,0.04024
+"Test everyone",0.015,0.03537
+"Test everyone",0.02,0.03045
+"Test everyone",0.025,0.02547
+"Test everyone",0.03,0.02045
+"Test everyone",0.035,0.01537
+"Test everyone",0.04,0.01025
+"Test everyone",0.045,0.00506
+"Test everyone",0.05,-0.00017
+"Test everyone",0.055,-0.00546
+"Test everyone",0.06,-0.01081
+"Test everyone",0.065,-0.01622
+"Test everyone",0.07,-0.02168
+"Test everyone",0.075,-0.0272
+"Test everyone",0.08,-0.03279
+"Test everyone",0.085,-0.03843
+"Test everyone",0.09,-0.04414
+"Test everyone",0.095,-0.0499
+"Test everyone",0.1,-0.05574
+"Test everyone",0.105,-0.06163
+"Test everyone",0.11,-0.0676
+"Test everyone",0.115,-0.07363
+"Test everyone",0.12,-0.07973
+"Test everyone",0.125,-0.0859
+"Test everyone",0.13,-0.09214
+"Test everyone",0.135,-0.09845
+"Test everyone",0.14,-0.10484
+"Test everyone",0.145,-0.1113
+"Test everyone",0.15,-0.11784
+"Test everyone",0.155,-0.12445
+"Test everyone",0.16,-0.13115
+"Test everyone",0.165,-0.13792
+"Test everyone",0.17,-0.14477
+"Test everyone",0.175,-0.15171
+"Test everyone",0.18,-0.15874
+"Test everyone",0.185,-0.16584
+"Test everyone",0.19,-0.17304
+"Test everyone",0.195,-0.18033
+"Test everyone",0.2,-0.1877
+"Test everyone",0.205,-0.19517
+"Test everyone",0.21,-0.20274
+"Test everyone",0.215,-0.2104
+"Test everyone",0.22,-0.21816
+"Test everyone",0.225,-0.22602
+"Test everyone",0.23,-0.23398
+"Test everyone",0.235,-0.24204
+"Test everyone",0.24,-0.25021
+"Test everyone",0.245,-0.25849
+"Test everyone",0.25,-0.26688
+"Test no one",0.01,0
+"Test no one",0.015,0
+"Test no one",0.02,0
+"Test no one",0.025,0
+"Test no one",0.03,0
+"Test no one",0.035,0
+"Test no one",0.04,0
+"Test no one",0.045,0
+"Test no one",0.05,0
+"Test no one",0.055,0
+"Test no one",0.06,0
+"Test no one",0.065,0
+"Test no one",0.07,0
+"Test no one",0.075,0
+"Test no one",0.08,0
+"Test no one",0.085,0
+"Test no one",0.09,0
+"Test no one",0.095,0
+"Test no one",0.1,0
+"Test no one",0.105,0
+"Test no one",0.11,0
+"Test no one",0.115,0
+"Test no one",0.12,0
+"Test no one",0.125,0
+"Test no one",0.13,0
+"Test no one",0.135,0
+"Test no one",0.14,0
+"Test no one",0.145,0
+"Test no one",0.15,0
+"Test no one",0.155,0
+"Test no one",0.16,0
+"Test no one",0.165,0
+"Test no one",0.17,0
+"Test no one",0.175,0
+"Test no one",0.18,0
+"Test no one",0.185,0
+"Test no one",0.19,0
+"Test no one",0.195,0
+"Test no one",0.2,0
+"Test no one",0.205,0
+"Test no one",0.21,0
+"Test no one",0.215,0
+"Test no one",0.22,0
+"Test no one",0.225,0
+"Test no one",0.23,0
+"Test no one",0.235,0
+"Test no one",0.24,0
+"Test no one",0.245,0
+"Test no one",0.25,0

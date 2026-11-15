@@ -1,0 +1,5 @@
+"threshold","tested_per_1000","cases_found_per_1000","cases_missed_per_1000","share_of_cases_found","tests_per_case_found"
+0.02,607,46.6,3.3,0.935,13
+0.03,496,44.2,5.6,0.887,11.2
+0.05,335,37.1,12.8,0.744,9
+0.1,147,19.6,30.3,0.393,7.5

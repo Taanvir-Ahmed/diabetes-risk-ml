@@ -1,0 +1,15 @@
+"variable","label","Logistic","Boosting"
+"age","Age",0.627,0.512
+"waist","Waist",0.322,0.279
+"hdl","HDL",0.341,0.23
+"ethnicity","Ethnicity",0.327,0.181
+"bmi","BMI",0.135,0.168
+"sbp","Systolic BP",0.104,0.154
+"education","Education",0.159,0.083
+"total_chol","Total cholesterol",0.133,0.068
+"income","Income",0.077,0.023
+"active","Physical activity",0.049,0.018
+"dbp","Diastolic BP",0.006,0.012
+"smoking","Smoking",0.024,0.006
+"family_history","Family history",0.064,0.005
+"sex","Sex",0.043,0

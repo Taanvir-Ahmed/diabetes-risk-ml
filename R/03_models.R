@@ -111,9 +111,10 @@ preds <- bind_rows(predict_all(calib), predict_all(test))
 settings <- tibble(
   model = names(model_cols),
   settings = c("All 14 predictors, linear terms",
-               sprintf("lambda.min = %.4f, %d non-zero coefficients",
+               sprintf("lambda.min = %.4f, %d of %d coefficients non-zero",
                        models$LASSO$lambda.min,
-                       sum(coef(models$LASSO, s = "lambda.min")[-1] != 0)),
+                       sum(coef(models$LASSO, s = "lambda.min")[-1] != 0),
+                       ncol(mm(train))),
                sprintf("500 trees, mtry = %d, min node size = %d",
                        rf_best$mtry, rf_best$node),
                sprintf("%d trees, depth 2, learning rate 0.01", gbm_trees))

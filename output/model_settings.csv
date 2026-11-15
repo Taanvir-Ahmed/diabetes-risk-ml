@@ -1,5 +1,5 @@
 "model","settings"
 "Logistic","All 14 predictors, linear terms"
-"LASSO","lambda.min = 0.0016, 14 non-zero coefficients"
+"LASSO","lambda.min = 0.0016, 14 of 21 coefficients non-zero"
 "Random forest","500 trees, mtry = 3, min node size = 100"
 "Boosting","879 trees, depth 2, learning rate 0.01"

@@ -1,0 +1,12 @@
+"group","level","n","unweighted","weighted","lower","upper"
+"All","All",11240,5,3.5,3.1,4
+"sex","Male",5405,5.4,3.9,3.1,4.6
+"sex","Female",5835,4.6,3.2,2.6,3.8
+"age_group","20-39",4343,1.6,1.4,1,1.7
+"age_group","40-59",4062,5.7,4.3,3.4,5.3
+"age_group","60-79",2835,9.1,6.2,5.1,7.2
+"ethnicity","White",4089,3.5,3,2.3,3.6
+"ethnicity","Black",2351,6.2,5.2,4.3,6.2
+"ethnicity","Hispanic",2923,5.9,4.2,3.3,5.1
+"ethnicity","Asian",1440,5.6,5.1,4,6.2
+"ethnicity","Other",437,4.6,3.1,1.5,4.7

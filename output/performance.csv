@@ -1,0 +1,25 @@
+"model","measure","estimate","lower","upper"
+"Logistic","auc",0.779,0.747,0.808
+"Logistic","brier",0.046,0.04,0.052
+"Logistic","cal_intercept",-0.01,-0.178,0.145
+"Logistic","cal_slope",0.875,0.734,1.021
+"Logistic","mean_pred",0.05,0.048,0.052
+"Logistic","observed",0.05,0.043,0.058
+"LASSO","auc",0.778,0.746,0.806
+"LASSO","brier",0.045,0.039,0.052
+"LASSO","cal_intercept",-0.012,-0.178,0.139
+"LASSO","cal_slope",0.982,0.821,1.138
+"LASSO","mean_pred",0.05,0.049,0.052
+"LASSO","observed",0.05,0.043,0.058
+"Random forest","auc",0.757,0.723,0.788
+"Random forest","brier",0.046,0.04,0.052
+"Random forest","cal_intercept",-0.032,-0.191,0.122
+"Random forest","cal_slope",0.929,0.769,1.1
+"Random forest","mean_pred",0.051,0.05,0.053
+"Random forest","observed",0.05,0.043,0.058
+"Boosting","auc",0.773,0.741,0.801
+"Boosting","brier",0.046,0.04,0.052
+"Boosting","cal_intercept",0.011,-0.154,0.164
+"Boosting","cal_slope",0.882,0.755,1.011
+"Boosting","mean_pred",0.049,0.047,0.052
+"Boosting","observed",0.05,0.043,0.058

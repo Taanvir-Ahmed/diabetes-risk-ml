@@ -1,0 +1,22 @@
+"term","OR","lower","upper"
+"age",1.05,1.04,1.06
+"sexFemale",1.09,0.8,1.47
+"ethnicityBlack",1.85,1.29,2.64
+"ethnicityHispanic",1.7,1.18,2.44
+"ethnicityAsian",3.36,2.14,5.27
+"ethnicityOther",1.37,0.63,2.97
+"educationHigh school",1.09,0.76,1.57
+"educationSome college or more",0.76,0.54,1.07
+"incomeMiddle",0.86,0.63,1.18
+"incomeHigh",0.8,0.55,1.16
+"incomeMissing",0.94,0.61,1.47
+"bmi",1.03,0.98,1.07
+"waist",1.03,1.01,1.05
+"sbp",1.01,1,1.02
+"dbp",1,0.99,1.01
+"total_chol",1,1,1.01
+"hdl",0.97,0.96,0.98
+"smokingFormer",1.06,0.78,1.44
+"smokingCurrent",1.04,0.73,1.49
+"activeYes",0.91,0.7,1.18
+"family_historyYes",1.14,0.88,1.47

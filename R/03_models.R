@@ -49,12 +49,17 @@ fit_rf <- function(tr, mtry = 3, node = 50) {
 }
 pred_rf <- function(m, nd) predict(m, nd)$predictions[, "1"]
 
-fit_gbm <- function(tr, n_trees = 1000) {
-  gbm(f, data = tr, distribution = "bernoulli", n.trees = n_trees,
-      interaction.depth = 2, shrinkage = 0.01, bag.fraction = 0.5,
-      n.minobsinnode = 20)
+# XGBoost needs a numeric matrix, so factors become 0/1 dummy columns
+xgb_params <- list(objective = "binary:logistic", eval_metric = "auc",
+                   max_depth = 2, eta = 0.01, subsample = 0.5,
+                   colsample_bytree = 0.8, min_child_weight = 5,
+                   nthread = 1, seed = 1)
+fit_xgb <- function(tr, n_trees = 1000) {
+  xgb.train(params = xgb_params,
+            data = xgb.DMatrix(mm(tr), label = tr$undiag_dm),
+            nrounds = n_trees, verbose = 0)
 }
-pred_gbm <- function(m, nd) predict(m, nd, n.trees = m$n.trees, type = "response")
+pred_xgb <- function(m, nd) predict(m, xgb.DMatrix(mm(nd)))
 
 # ---- Tuning with 5-fold CV on the training set ----------------------------------
 folds <- sample(rep(1:5, length.out = nrow(train)))
@@ -74,19 +79,24 @@ rf_grid$auc <- mapply(function(m, n) cv_auc(fit_rf, pred_rf, mtry = m, node = n)
 rf_best <- rf_grid[which.max(rf_grid$auc), ]
 print(rf_grid)
 
-# Boosting: number of trees chosen by gbm's own 5-fold CV
-gbm_cv <- gbm(f, data = train, distribution = "bernoulli", n.trees = 3000,
-              interaction.depth = 2, shrinkage = 0.01, bag.fraction = 0.5,
-              n.minobsinnode = 20, cv.folds = 5)
-gbm_trees <- gbm.perf(gbm_cv, method = "cv", plot.it = FALSE)
-cat("Boosting: best number of trees =", gbm_trees, "\n")
+# XGBoost: number of trees chosen by 5-fold CV (stop when AUC stops improving)
+xgb_cv <- xgb.cv(params = xgb_params,
+                 data = xgb.DMatrix(mm(train), label = train$undiag_dm),
+                 nrounds = 3000, nfold = 5, early_stopping_rounds = 100,
+                 verbose = 0)
+xgb_trees <- if (!is.null(xgb_cv$early_stop$best_iteration)) {
+  xgb_cv$early_stop$best_iteration     # xgboost 3.x
+} else {
+  xgb_cv$best_iteration                # older versions
+}
+cat("XGBoost: best number of trees =", xgb_trees, "\n")
 
 cv_results <- tibble(
   model = names(model_cols),
   cv_auc = c(cv_auc(fit_logistic, pred_logistic),
              cv_auc(fit_lasso, pred_lasso),
              rf_best$auc,
-             cv_auc(fit_gbm, pred_gbm, n_trees = gbm_trees))
+             cv_auc(fit_xgb, pred_xgb, n_trees = xgb_trees))
 )
 print(cv_results)
 write.csv(cv_results, "output/cv_auc.csv", row.names = FALSE)
@@ -96,10 +106,10 @@ models <- list(
   "Logistic"      = fit_logistic(train),
   "LASSO"         = fit_lasso(train),
   "Random forest" = fit_rf(train, rf_best$mtry, rf_best$node),
-  "Boosting"      = fit_gbm(train, gbm_trees)
+  "XGBoost"       = fit_xgb(train, xgb_trees)
 )
 pred_funs <- list("Logistic" = pred_logistic, "LASSO" = pred_lasso,
-                  "Random forest" = pred_rf, "Boosting" = pred_gbm)
+                  "Random forest" = pred_rf, "XGBoost" = pred_xgb)
 
 predict_all <- function(nd) {
   out <- nd |> select(SEQN, set, undiag_dm, sex, age_group, ethnicity)
@@ -117,7 +127,7 @@ settings <- tibble(
                        ncol(mm(train))),
                sprintf("500 trees, mtry = %d, min node size = %d",
                        rf_best$mtry, rf_best$node),
-               sprintf("%d trees, depth 2, learning rate 0.01", gbm_trees))
+               sprintf("%d trees, depth 2, learning rate 0.01", xgb_trees))
 )
 write.csv(settings, "output/model_settings.csv", row.names = FALSE)
 

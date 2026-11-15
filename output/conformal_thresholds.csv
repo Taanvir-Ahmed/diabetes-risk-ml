@@ -1,5 +1,5 @@
 "model","method","threshold_no","threshold_yes","no_in_set_if_risk_below","yes_in_set_if_risk_above"
 "Logistic","Standard",0.1571,0.1571,0.1571,0.8429
 "Logistic","Class-conditional",0.1143,0.9719,0.1143,0.0281
-"Boosting","Standard",0.1624,0.1624,0.1624,0.8376
-"Boosting","Class-conditional",0.1041,0.9731,0.1041,0.0269
+"XGBoost","Standard",0.1633,0.1633,0.1633,0.8367
+"XGBoost","Class-conditional",0.1158,0.9708,0.1158,0.0292

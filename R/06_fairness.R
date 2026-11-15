@@ -10,7 +10,7 @@
 source("R/00_setup.R")
 preds <- readRDS("data/processed/predictions.rds")
 test <- filter(preds, set == "test")
-models_used <- c("Logistic", "Boosting")
+models_used <- c("Logistic", "XGBoost")
 threshold <- 0.05
 
 # Fast AUC (Mann-Whitney formula), same result as pROC

@@ -21,7 +21,7 @@ calib <- filter(preds, set == "calib")
 test  <- filter(preds, set == "test")
 
 alpha <- 0.10
-models_used <- c("Logistic", "Boosting")
+models_used <- c("Logistic", "XGBoost")
 
 conf_q <- function(scores, alpha) {
   n <- length(scores)

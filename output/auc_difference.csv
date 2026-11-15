@@ -1,4 +1,4 @@
 "model","diff_vs_logistic","lower","upper"
-"LASSO",-0.001,-0.005,0.003
-"Random forest",-0.022,-0.045,0.001
-"Boosting",-0.006,-0.022,0.011
+"LASSO",-0.002,-0.007,0.003
+"Random forest",-0.025,-0.049,-0.002
+"XGBoost",-0.003,-0.02,0.013

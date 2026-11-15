@@ -2,7 +2,7 @@
 # Packages, settings and plot style used by all scripts.
 
 pkgs <- c("haven", "dplyr", "tidyr", "ggplot2", "patchwork", "glmnet",
-          "ranger", "gbm", "pROC", "survey", "scales")
+          "ranger", "xgboost", "pROC", "survey", "scales")
 missing_pkgs <- pkgs[!pkgs %in% rownames(installed.packages())]
 if (length(missing_pkgs) > 0) {
   stop("Please install: ", paste(missing_pkgs, collapse = ", "))
@@ -16,7 +16,7 @@ suppressPackageStartupMessages({
   library(patchwork)
   library(glmnet)
   library(ranger)
-  library(gbm)
+  suppressWarnings(library(xgboost))
   library(pROC)
   library(survey)
   library(scales)
@@ -33,7 +33,7 @@ n_boot <- 1000
 
 # Colours (one per model, always in the same order)
 model_cols <- c("Logistic" = "#2a78d6", "LASSO" = "#eb6834",
-                "Random forest" = "#1baf7a", "Boosting" = "#eda100")
+                "Random forest" = "#1baf7a", "XGBoost" = "#eda100")
 
 theme_set(
   theme_minimal(base_size = 11) +

@@ -1,0 +1,13 @@
+"model","method","group","n","coverage","lower","upper"
+"Boosting","Class-conditional","All",3371,0.896,0.885,0.906
+"Boosting","Class-conditional","With diabetes",168,0.905,0.86,0.949
+"Boosting","Class-conditional","Without diabetes",3203,0.895,0.884,0.906
+"Boosting","Standard","All",3371,0.906,0.896,0.916
+"Boosting","Standard","With diabetes",168,0,0,0
+"Boosting","Standard","Without diabetes",3203,0.954,0.947,0.961
+"Logistic","Class-conditional","All",3371,0.893,0.882,0.903
+"Logistic","Class-conditional","With diabetes",168,0.899,0.853,0.944
+"Logistic","Class-conditional","Without diabetes",3203,0.893,0.882,0.903
+"Logistic","Standard","All",3371,0.901,0.891,0.911
+"Logistic","Standard","With diabetes",168,0,0,0
+"Logistic","Standard","Without diabetes",3203,0.948,0.94,0.956

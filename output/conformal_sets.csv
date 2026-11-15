@@ -1,0 +1,11 @@
+"model","method","set","without_diabetes","with_diabetes","total"
+"Boosting","Class-conditional","{No, Yes}: uncertain",1282,97,1379
+"Boosting","Class-conditional","{No}",1585,16,1601
+"Boosting","Class-conditional","{Yes}",336,55,391
+"Boosting","Standard","Empty set",148,34,182
+"Boosting","Standard","{No}",3055,134,3189
+"Logistic","Class-conditional","{No, Yes}: uncertain",1233,93,1326
+"Logistic","Class-conditional","{No}",1626,17,1643
+"Logistic","Class-conditional","{Yes}",344,58,402
+"Logistic","Standard","Empty set",167,31,198
+"Logistic","Standard","{No}",3036,137,3173
